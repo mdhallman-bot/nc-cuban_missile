@@ -1,0 +1,1152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Cuban Missile Crisis — Bilingual Edition / Edición Bilingüe</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Nunito:wght@400;600;700;800&family=IBM+Plex+Mono:wght@400;600&display=swap');
+
+:root {
+  --navy: #1a1008;
+  --red: #8b2e00;
+  --gold: #c8962a;
+  --cream: #f5f0e8;
+  --ink: #1a1008;
+  --muted: #6b6357;
+  --border: #b8a888;
+  --green: #166534;
+  --green-light: #dcfce7;
+  --highlight: #fef08a;
+  --highlight-border: #ca8a04;
+  --blue: #1e40af;
+  --blue-light: #dbeafe;
+  --steel: #3a4a5c;
+  --teal: #0f766e;
+  --teal-light: #ccfbf1;
+  --orange: #ea580c;
+  --red-light: #fee2e2;
+  --purple: #7c3aed;
+  --spanish-bg: #f0fdf4;
+  --spanish-border: #86efac;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Nunito', sans-serif; background: var(--cream); color: var(--ink); line-height: 1.75; font-size: 16px; }
+
+/* HEADER */
+.site-header { background: var(--navy); color: white; padding: 28px 40px 0; position: relative; overflow: hidden; }
+.site-header::before { content:''; position:absolute; inset:0; background:repeating-linear-gradient(90deg,transparent,transparent 48px,rgba(255,255,255,.02) 48px,rgba(255,255,255,.02) 49px); pointer-events:none; }
+.header-inner { position: relative; }
+.header-badge { display:inline-flex; align-items:center; gap:8px; background:var(--orange); color:white; font-size:.72rem; font-weight:800; letter-spacing:.1em; text-transform:uppercase; padding:4px 12px; border-radius:20px; margin-bottom:10px; }
+.header-title { font-family:'Playfair Display',serif; font-size:2rem; font-weight:900; line-height:1.1; }
+.header-subtitle { font-size:.9rem; color:rgba(255,255,255,.6); margin-top:4px; font-style:italic; }
+.header-rule { width:48px; height:3px; background:var(--gold); border-radius:2px; margin:12px 0 8px; }
+.bilingual-tag { font-size:.78rem; color:var(--gold); margin-top:6px; font-weight:700; letter-spacing:.05em; }
+.progress-wrap { padding:16px 40px 0; }
+.progress-track { height:7px; background:rgba(255,255,255,.15); border-radius:4px; overflow:hidden; }
+.progress-fill { height:100%; width:0%; background:linear-gradient(90deg,var(--red),var(--gold)); border-radius:4px; transition:width .5s ease; }
+.progress-text { font-family:'IBM Plex Mono',monospace; font-size:.72rem; color:rgba(255,255,255,.5); margin-top:5px; letter-spacing:.04em; }
+.student-bar { display:flex; gap:16px; flex-wrap:wrap; padding:14px 40px 18px; }
+.student-bar div { display:flex; flex-direction:column; gap:3px; }
+.student-bar label { font-size:.68rem; color:rgba(255,255,255,.5); font-weight:700; letter-spacing:.08em; text-transform:uppercase; }
+.student-bar input { background:rgba(255,255,255,.1); border:1px solid rgba(255,255,255,.2); color:white; border-radius:4px; padding:6px 10px; font-family:'Nunito',sans-serif; font-size:.87rem; width:180px; }
+.student-bar input:focus { outline:none; border-color:var(--gold); }
+
+/* MAIN */
+.main { max-width:920px; margin:0 auto; padding:32px 24px 80px; }
+
+/* CONTEXT */
+.context-box { background:var(--steel); color:white; border-radius:10px; padding:24px 28px; margin-bottom:28px; border-left:5px solid var(--gold); }
+.context-eyebrow { font-size:.72rem; font-weight:800; letter-spacing:.12em; text-transform:uppercase; color:var(--gold); margin-bottom:10px; }
+.context-box p { font-size:.93rem; line-height:1.75; margin-bottom:10px; }
+.context-box p:last-child { margin-bottom:0; }
+.context-es { border-top:1px solid rgba(255,255,255,.2); margin-top:14px; padding-top:14px; }
+.context-es p { color:rgba(255,255,255,.85); }
+
+/* IMAGE BLOCK */
+.img-block { margin-bottom:28px; }
+.img-block img { width:100%; border-radius:8px; border:3px solid var(--border); display:block; max-height:300px; object-fit:cover; object-position:center top; }
+.img-caption { font-size:.75rem; color:var(--muted); font-style:italic; text-align:center; margin-top:7px; padding:0 8px; }
+.img-placeholder { width:100%; height:180px; border-radius:8px; border:3px dashed var(--border); background:#f0ede8; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:8px; color:var(--muted); font-size:.82rem; font-style:italic; }
+.img-grid { display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-bottom:28px; }
+@media(max-width:600px){ .img-grid { grid-template-columns:1fr; } }
+
+/* VOCAB */
+.vocab-section { background:white; border:2px solid var(--border); border-radius:10px; margin-bottom:28px; overflow:hidden; }
+.vocab-header { background:var(--navy); color:white; padding:14px 20px; font-weight:800; font-size:.88rem; letter-spacing:.05em; display:flex; align-items:center; gap:8px; }
+.vocab-header span { color:var(--gold); font-weight:400; font-size:.8rem; }
+.vocab-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(210px,1fr)); gap:1px; background:var(--border); }
+.vocab-card { background:white; padding:14px 16px; }
+.vocab-word { font-weight:800; color:var(--red); font-size:.95rem; margin-bottom:4px; }
+.vocab-def { font-size:.82rem; color:var(--ink); line-height:1.45; margin-bottom:5px; }
+.vocab-es { font-size:.78rem; color:var(--teal); border-top:1px solid var(--teal-light); padding-top:5px; margin-top:4px; font-style:italic; }
+.vocab-ex { font-size:.75rem; color:var(--muted); font-style:italic; border-top:1px solid var(--border); padding-top:4px; margin-top:4px; }
+
+/* DRAG DROP */
+.drag-section { background:white; border:2px solid var(--border); border-radius:10px; overflow:hidden; margin-bottom:28px; }
+.drag-header { background:var(--red); color:white; padding:12px 20px; font-weight:800; font-size:.87rem; }
+.drag-header .es { color:rgba(255,255,255,.75); font-weight:600; font-size:.78rem; display:block; margin-top:2px; }
+.drag-body { padding:20px; }
+.drag-chips { display:flex; flex-wrap:wrap; gap:8px; margin-bottom:20px; min-height:44px; padding:10px; background:var(--cream); border:2px dashed var(--border); border-radius:8px; }
+.chip { background:var(--navy); color:white; padding:6px 14px; border-radius:20px; font-size:.82rem; font-weight:700; cursor:grab; user-select:none; transition:transform .1s,opacity .2s; }
+.chip:active { cursor:grabbing; transform:scale(1.05); }
+.chip.dragging { opacity:.4; }
+.drag-rows { display:flex; flex-direction:column; gap:10px; }
+.drag-row { display:grid; grid-template-columns:1fr 1fr; gap:12px; align-items:center; background:var(--cream); border-radius:8px; padding:12px 14px; border:1px solid var(--border); }
+.drag-def { font-size:.87rem; line-height:1.4; }
+.drag-def .es-def { font-size:.78rem; color:var(--teal); font-style:italic; margin-top:3px; }
+.drag-slot { min-height:38px; border:2px dashed var(--border); border-radius:6px; display:flex; align-items:center; justify-content:center; padding:6px; font-size:.82rem; color:var(--muted); transition:background .2s,border-color .2s; background:white; }
+.drag-slot.over { background:var(--highlight); border-color:var(--highlight-border); }
+.drag-slot.correct { background:var(--green-light); border-color:var(--green); border-style:solid; }
+.drag-slot.incorrect { background:var(--red-light); border-color:var(--red); border-style:solid; }
+.drag-slot .chip { margin:0; cursor:default; }
+
+/* SECTION CARDS */
+.sec-card { background:white; border:2px solid var(--border); border-radius:10px; overflow:hidden; margin-bottom:28px; }
+.sec-header { padding:16px 22px; display:flex; align-items:center; gap:12px; }
+.sec-header.crisis { background:var(--red); }
+.sec-header.arkhipov { background:var(--steel); }
+.sec-num { width:38px; height:38px; border-radius:50%; background:rgba(255,255,255,.2); color:white; font-weight:900; font-size:1rem; display:flex; align-items:center; justify-content:center; flex-shrink:0; }
+.sec-title-wrap { color:white; }
+.sec-label { font-size:.68rem; font-weight:800; letter-spacing:.12em; text-transform:uppercase; color:rgba(255,255,255,.65); }
+.sec-title { font-family:'Playfair Display',serif; font-size:1.15rem; font-weight:700; }
+.sec-body { padding:24px 26px; }
+
+/* BILINGUAL PASSAGE */
+.bilingual-passage { display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-bottom:14px; }
+@media(max-width:680px){ .bilingual-passage { grid-template-columns:1fr; } }
+.passage-col { border-radius:8px; padding:16px 18px; font-size:.91rem; line-height:1.85; }
+.passage-col.en { background:#f8f7f4; border:1px solid var(--border); }
+.passage-col.es { background:var(--spanish-bg); border:1px solid var(--spanish-border); }
+.passage-lang-tag { font-size:.65rem; font-weight:800; letter-spacing:.1em; text-transform:uppercase; padding:2px 8px; border-radius:10px; display:inline-block; margin-bottom:8px; }
+.en-tag { background:var(--blue-light); color:var(--blue); }
+.es-tag { background:var(--teal-light); color:var(--teal); }
+.passage-col p { margin-bottom:12px; }
+.passage-col p:last-child { margin-bottom:0; }
+.passage-col strong { color:var(--red); font-weight:800; }
+
+/* CLICK HIGHLIGHT */
+.click-instruction { font-size:.82rem; color:var(--steel); background:var(--blue-light); border:1px solid #93c5fd; border-radius:6px; padding:9px 14px; margin-bottom:10px; display:flex; align-items:center; gap:7px; }
+.highlightable { user-select:text; cursor:text; position:relative; }
+.highlightable mark.hl-mark { background:var(--highlight); border-bottom:2px solid var(--highlight-border); border-radius:2px; font-weight:700; cursor:pointer; }
+.highlightable mark.hl-mark::after { content:'✕'; font-size:.6rem; color:var(--highlight-border); vertical-align:super; margin-left:2px; font-weight:900; }
+
+/* JUSTIFY */
+.justify-block { background:var(--cream); border:1px solid var(--border); border-left:4px solid var(--gold); border-radius:8px; padding:14px 16px; margin-bottom:18px; }
+.justify-label { font-size:.72rem; font-weight:800; letter-spacing:.08em; text-transform:uppercase; color:var(--gold); margin-bottom:6px; }
+.justify-es { font-size:.8rem; color:var(--teal); font-style:italic; margin-bottom:8px; }
+.justify-block textarea { width:100%; border:1px solid var(--border); border-radius:6px; padding:10px 12px; font-family:'Nunito',sans-serif; font-size:.9rem; line-height:1.6; resize:vertical; min-height:65px; background:white; }
+.justify-block textarea:focus { outline:none; border-color:var(--gold); }
+.justify-block textarea.complete { border-color:var(--green); background:var(--green-light); }
+
+/* FIVE FACTS */
+.facts-block { background:white; border:2px solid var(--border); border-radius:10px; overflow:hidden; margin-bottom:22px; }
+.facts-header { background:var(--purple); color:white; padding:11px 18px; font-weight:800; font-size:.87rem; display:flex; align-items:center; gap:8px; }
+.facts-body { padding:16px 20px; display:flex; flex-direction:column; gap:10px; }
+.fact-row { display:flex; align-items:flex-start; gap:10px; }
+.fact-num { width:26px; height:26px; border-radius:50%; background:var(--purple); color:white; font-weight:900; font-size:.8rem; display:flex; align-items:center; justify-content:center; flex-shrink:0; margin-top:2px; }
+.fact-row input { flex:1; border:1px solid var(--border); border-radius:6px; padding:8px 12px; font-family:'Nunito',sans-serif; font-size:.9rem; background:var(--cream); }
+.fact-row input:focus { outline:none; border-color:var(--purple); background:white; }
+.fact-row input.complete { border-color:var(--green); background:var(--green-light); }
+
+/* QUESTIONS */
+.questions-eyebrow { font-size:.72rem; font-weight:800; letter-spacing:.1em; text-transform:uppercase; color:var(--red); margin:22px 0 12px; }
+.mc-q { background:var(--cream); border:1px solid var(--border); border-radius:8px; padding:16px 18px; margin-bottom:12px; }
+.mc-q p { font-size:.93rem; font-weight:700; margin-bottom:4px; }
+.mc-q-es { font-size:.82rem; color:var(--teal); font-style:italic; margin-bottom:10px; }
+.mc-opts { display:flex; flex-direction:column; gap:8px; }
+.mc-opt { display:flex; align-items:flex-start; gap:9px; padding:10px 13px; border:1px solid var(--border); border-radius:6px; cursor:pointer; font-size:.87rem; background:white; transition:background .15s; line-height:1.45; }
+.mc-opt:hover { background:#f0ede8; }
+.mc-opt input { margin-top:3px; flex-shrink:0; accent-color:var(--red); }
+.mc-opt.correct { background:var(--green-light); border-color:var(--green); }
+.mc-opt.incorrect { background:var(--red-light); border-color:var(--red); }
+.mc-opt.locked { pointer-events:none; }
+.mc-fb { margin-top:8px; font-size:.82rem; font-weight:700; padding:7px 12px; border-radius:5px; display:none; }
+.mc-fb.show { display:block; }
+.mc-fb.correct { background:var(--green-light); color:var(--green); }
+.mc-fb.incorrect { background:var(--red-light); color:var(--red); }
+
+/* SENTENCE FRAMES — simplified: just Level 1 + Independent */
+.frames-wrapper { margin-bottom:20px; }
+.frames-label { font-size:.72rem; font-weight:800; letter-spacing:.08em; text-transform:uppercase; color:var(--purple); margin-bottom:10px; }
+.frame-tabs { display:flex; gap:6px; flex-wrap:wrap; margin-bottom:12px; }
+.frame-tab { padding:5px 13px; border-radius:14px; border:2px solid var(--border); font-size:.78rem; font-weight:700; cursor:pointer; background:white; transition:all .15s; }
+.frame-tab.lv1 { border-color:var(--green); color:var(--green); }
+.frame-tab.lv4 { border-color:var(--purple); color:var(--purple); }
+.frame-tab.lv1.active { background:var(--green); color:white; }
+.frame-tab.lv4.active { background:var(--purple); color:white; }
+.frame-panel { display:none; background:var(--cream); border:1px solid var(--border); border-radius:8px; padding:14px 16px; }
+.frame-panel.active { display:block; }
+.frame-prompt { font-size:.85rem; color:var(--muted); font-style:italic; line-height:1.5; margin-bottom:6px; }
+.frame-prompt-es { font-size:.81rem; color:var(--teal); font-style:italic; line-height:1.5; border-top:1px solid var(--spanish-border); padding-top:6px; margin-bottom:10px; }
+.frame-panel textarea { width:100%; border:1px solid var(--border); border-radius:6px; padding:10px 12px; font-family:'Nunito',sans-serif; font-size:.9rem; line-height:1.6; resize:vertical; min-height:72px; background:white; }
+.frame-panel textarea:focus { outline:none; border-color:var(--gold); }
+.frame-panel textarea.complete { border-color:var(--green); background:var(--green-light); }
+
+/* PARTNER */
+.partner-block { background:#f0f4ff; border:1px solid #bfdbfe; border-radius:8px; padding:12px 16px; margin-top:12px; }
+.partner-label { font-size:.72rem; font-weight:800; color:var(--blue); letter-spacing:.08em; text-transform:uppercase; margin-bottom:5px; }
+.partner-prompt { font-size:.83rem; color:var(--blue); margin-bottom:4px; font-style:italic; }
+.partner-prompt-es { font-size:.79rem; color:var(--teal); font-style:italic; margin-bottom:8px; }
+.partner-block textarea { width:100%; border:1px solid #bfdbfe; border-radius:6px; padding:8px 12px; font-family:'Nunito',sans-serif; font-size:.9rem; resize:vertical; min-height:50px; background:white; }
+.partner-block textarea:focus { outline:none; border-color:var(--blue); }
+.partner-block textarea.complete { border-color:var(--green); background:var(--green-light); }
+
+/* CER */
+.cer-card { background:white; border:2px solid var(--gold); border-radius:10px; overflow:hidden; margin-bottom:28px; }
+.cer-header { background:var(--navy); color:white; padding:16px 22px; }
+.cer-header h3 { font-family:'Playfair Display',serif; font-size:1.1rem; font-weight:700; }
+.cer-header .eq { color:var(--gold); font-size:.88rem; margin-top:4px; font-style:italic; }
+.cer-header .eq-es { color:rgba(255,255,255,.65); font-size:.83rem; margin-top:3px; font-style:italic; }
+.cer-body { padding:22px 26px; }
+.cer-prompt { background:var(--cream); border:1px solid var(--border); border-radius:8px; padding:16px 18px; margin-bottom:18px; }
+.cer-prompt p { font-size:.95rem; font-weight:700; margin-bottom:6px; }
+.cer-prompt .es { font-size:.87rem; color:var(--teal); font-style:italic; }
+.wb-header { font-size:.72rem; font-weight:800; color:var(--muted); letter-spacing:.08em; text-transform:uppercase; margin-bottom:8px; display:flex; align-items:center; justify-content:space-between; }
+.wb-counter { font-family:'IBM Plex Mono',monospace; font-size:.8rem; color:var(--red); font-weight:700; background:var(--red-light); padding:2px 10px; border-radius:10px; }
+.wb-counter.met { color:var(--green); background:var(--green-light); }
+.cer-word-bank { display:flex; flex-wrap:wrap; gap:7px; margin-bottom:18px; }
+.cer-chip { background:var(--navy); color:white; padding:5px 13px; border-radius:14px; font-size:.8rem; font-weight:700; cursor:default; user-select:none; transition:all .2s; }
+.cer-chip span { color:rgba(255,255,255,.55); font-size:.7rem; display:block; font-weight:400; }
+.cer-chip.used { background:var(--gold); color:var(--navy); }
+.cer-chip.used span { color:rgba(26,16,8,.6); }
+.cer-part-label { display:flex; align-items:center; gap:10px; margin:18px 0 10px; }
+.cer-badge { width:32px; height:32px; border-radius:50%; font-weight:900; font-size:.87rem; display:flex; align-items:center; justify-content:center; flex-shrink:0; }
+.badge-c { background:var(--red); color:white; }
+.badge-e { background:var(--steel); color:white; }
+.badge-r { background:var(--purple); color:white; }
+.cer-part-title { font-weight:800; font-size:.93rem; }
+.cer-part-es { font-size:.78rem; color:var(--teal); font-style:italic; }
+.cer-divider { border:none; border-top:1px solid var(--border); margin:22px 0; }
+
+/* ASSEMBLED PARAGRAPH */
+.para-assembly { background:var(--navy); color:white; border-radius:10px; padding:22px 26px; margin-top:24px; }
+.para-assembly-label { font-family:'IBM Plex Mono',monospace; font-size:.72rem; letter-spacing:.1em; text-transform:uppercase; color:var(--gold); margin-bottom:12px; }
+.para-assembly-text { font-size:.95rem; line-height:1.85; color:rgba(245,240,232,.92); min-height:60px; font-style:italic; }
+.para-placeholder { color:rgba(255,255,255,.3); font-style:italic; }
+.para-copy-btn { margin-top:12px; padding:7px 16px; background:rgba(255,255,255,.12); border:1px solid rgba(255,255,255,.2); border-radius:6px; color:white; font-family:'Nunito',sans-serif; font-size:.8rem; font-weight:700; cursor:pointer; transition:background .2s; }
+.para-copy-btn:hover { background:rgba(255,255,255,.2); }
+
+/* ACTIONS */
+.action-row { display:flex; gap:12px; flex-wrap:wrap; margin-top:24px; }
+.btn { padding:11px 22px; border:none; border-radius:6px; font-family:'Nunito',sans-serif; font-size:.88rem; font-weight:800; cursor:pointer; transition:all .2s; }
+.btn-primary { background:var(--red); color:white; box-shadow:0 3px 0 #5a1e00; }
+.btn-primary:hover { background:#6e2400; transform:translateY(-1px); }
+.btn-secondary { background:var(--steel); color:white; box-shadow:0 3px 0 #1a2a3a; }
+.btn-secondary:hover { background:#2a3a4a; transform:translateY(-1px); }
+.save-notice { font-family:'IBM Plex Mono',monospace; font-size:.72rem; color:var(--green); margin-top:10px; letter-spacing:.05em; opacity:0; transition:opacity .5s; }
+.save-notice.show { opacity:1; }
+.grade-panel { background:white; border:2px solid var(--border); border-radius:10px; padding:22px 26px; margin-top:22px; display:none; }
+.grade-panel.show { display:block; }
+.grade-title { font-family:'Playfair Display',serif; font-size:1.1rem; font-weight:700; color:var(--navy); margin-bottom:12px; }
+.grade-score { font-family:'IBM Plex Mono',monospace; font-size:1.6rem; font-weight:600; color:var(--navy); margin-bottom:14px; }
+.grade-rows { display:flex; flex-direction:column; gap:6px; }
+.grade-row { display:flex; align-items:center; gap:9px; font-size:.87rem; padding:8px 12px; border-radius:5px; background:#f8f7f4; font-weight:600; }
+.grade-row.pass { background:var(--green-light); }
+.grade-row.fail { background:var(--red-light); }
+.grade-row .item-name { flex:1; }
+
+@media print {
+  body { background:white !important; }
+  .site-header { background:#1a1008 !important; -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+  .btn,.action-row,.grade-panel,.save-notice,.frame-tabs { display:none !important; }
+  .frame-panel { display:block !important; }
+  .bilingual-passage { grid-template-columns:1fr 1fr; }
+  .sec-card,.cer-card,.drag-section,.vocab-section,.facts-block { break-inside:avoid; }
+  .para-assembly { background:#1a1008 !important; -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+  #pdf-score-bar { display:block !important; background:#1a1008 !important; color:#f5f0e8 !important; padding:14px 24px !important; font-family:monospace !important; font-size:13pt !important; font-weight:bold !important; margin:0 0 20px 0 !important; width:100% !important; -webkit-print-color-adjust:exact !important; print-color-adjust:exact !important; }
+}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <div class="header-badge">🌎 Bilingual Edition / Edición Bilingüe</div>
+    <div class="header-title">The Cuban Missile Crisis</div>
+    <div class="header-subtitle">La Crisis de los Misiles en Cuba · October / Octubre 1962</div>
+    <div class="header-rule"></div>
+    <div class="bilingual-tag">🇺🇸 English · 🇲🇽 Español</div>
+  </div>
+  <div class="progress-wrap">
+    <div class="progress-track"><div class="progress-fill" id="progressBar"></div></div>
+    <div class="progress-text" id="progressLabel">0 of 14 sections complete / 0 de 14 secciones completas</div>
+  </div>
+  <div class="student-bar">
+    <div><label>Name / Nombre</label><input type="text" id="studentName" placeholder="Tu nombre" oninput="debouncedSave()"></div>
+    <div><label>Period / Período</label><input type="text" id="studentPeriod" placeholder="Período" oninput="debouncedSave()"></div>
+    <div><label>Date / Fecha</label><input type="text" id="studentDate" placeholder="Fecha" oninput="debouncedSave()"></div>
+  </div>
+</header>
+
+<div class="main">
+
+<!-- CONTEXT -->
+<div class="context-box">
+  <div class="context-eyebrow">📜 Historical Background / Contexto Histórico</div>
+  <p>After World War II, two superpowers emerged: the <strong>United States</strong> and the <strong>Soviet Union</strong>. They became enemies in a conflict called the <strong>Cold War</strong>. In 1962, the Soviet Union secretly placed nuclear missiles in Cuba — only 90 miles from Florida. For 13 days, the world waited to see if a nuclear war would begin.</p>
+  <div class="context-es">
+    <p>Después de la Segunda Guerra Mundial, dos superpotencias surgieron: los <strong>Estados Unidos</strong> y la <strong>Unión Soviética</strong>. Se convirtieron en enemigos en un conflicto llamado la <strong>Guerra Fría</strong>. En 1962, la Unión Soviética colocó misiles nucleares en Cuba — a solo 90 millas de Florida. Por 13 días, el mundo esperó para ver si comenzaría una guerra nuclear.</p>
+  </div>
+</div>
+
+<!-- IMAGE 1 -->
+<div class="img-block">
+  <img src="https://www.archives.gov/files/milestone-documents/images/doc-094b-big.jpg"
+    alt="U-2 aerial photo of Soviet missile sites in Cuba, October 1962"
+    onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+  <div class="img-placeholder" style="display:none">📸 Foto del avión espía U-2 — Sitios de misiles en Cuba 1962</div>
+  <div class="img-caption">Foto del avión espía U-2 mostrando los sitios de misiles soviéticos en Cuba, 14 de octubre de 1962. / U-2 spy plane photo of Soviet missile sites in Cuba, October 14, 1962. (National Archives — Public Domain)</div>
+</div>
+
+<!-- VOCAB STORY 1 -->
+<div class="vocab-section">
+  <div class="vocab-header">📖 Key Vocabulary — Story 1 / Vocabulario — Historia 1 <span>Read before you begin / Lee antes de empezar</span></div>
+  <div class="vocab-grid">
+    <div class="vocab-card">
+      <div class="vocab-word">brinkmanship</div>
+      <div class="vocab-def">Pushing a dangerous situation to the very edge to force the other side to back down.</div>
+      <div class="vocab-es">política arriesgada — Llevar una situación peligrosa al límite para que el otro lado ceda.</div>
+    </div>
+    <div class="vocab-card">
+      <div class="vocab-word">deterrence</div>
+      <div class="vocab-def">Using the threat of retaliation to prevent an enemy from attacking.</div>
+      <div class="vocab-es">disuasión — Usar la amenaza de represalia para evitar que el enemigo ataque.</div>
+    </div>
+    <div class="vocab-card">
+      <div class="vocab-word">quarantine</div>
+      <div class="vocab-def">Kennedy's naval blockade — US ships surrounding Cuba to stop Soviet weapons.</div>
+      <div class="vocab-es">cuarentena — El bloqueo naval de Kennedy: barcos de EE.UU. rodeando Cuba.</div>
+    </div>
+    <div class="vocab-card">
+      <div class="vocab-word">escalation</div>
+      <div class="vocab-def">When a conflict grows more intense, with each side raising the stakes.</div>
+      <div class="vocab-es">escalada — Cuando un conflicto se vuelve más intenso y peligroso.</div>
+    </div>
+    <div class="vocab-card">
+      <div class="vocab-word">ExComm</div>
+      <div class="vocab-def">Kennedy's secret group of top advisers who debated how to respond to the missiles.</div>
+      <div class="vocab-es">ExComm — El grupo secreto de asesores principales de Kennedy.</div>
+    </div>
+    <div class="vocab-card">
+      <div class="vocab-word">mutual destruction</div>
+      <div class="vocab-def">If either side fires, both sides are destroyed — making war irrational.</div>
+      <div class="vocab-es">destrucción mutua — Si un lado dispara, ambos son destruidos.</div>
+    </div>
+  </div>
+</div>
+
+<!-- DRAG DROP STORY 1 -->
+<div class="drag-section">
+  <div class="drag-header">🧩 Vocabulary Match — Story 1 / Empareja el vocabulario — Historia 1
+    <span class="es">Drag each word to its definition. / Arrastra cada palabra a su definición.</span>
+  </div>
+  <div class="drag-body">
+    <div class="drag-chips" id="chipBank1">
+      <div class="chip" draggable="true" data-word="brinkmanship" id="chip1-brinkmanship">brinkmanship</div>
+      <div class="chip" draggable="true" data-word="deterrence" id="chip1-deterrence">deterrence</div>
+      <div class="chip" draggable="true" data-word="escalation" id="chip1-escalation">escalation</div>
+      <div class="chip" draggable="true" data-word="quarantine" id="chip1-quarantine">quarantine</div>
+      <div class="chip" draggable="true" data-word="ExComm" id="chip1-ExComm">ExComm</div>
+      <div class="chip" draggable="true" data-word="mutual destruction" id="chip1-mutual destruction">mutual destruction</div>
+    </div>
+    <div class="drag-rows">
+      <div class="drag-row"><div class="drag-def">Pushing to the edge of war to force the other side to back down<div class="es-def">Llevar al borde de la guerra para que el otro lado ceda</div></div><div class="drag-slot" data-answer="brinkmanship" data-bank="1">Drop / Suelta</div></div>
+      <div class="drag-row"><div class="drag-def">Threatening retaliation to prevent any attack<div class="es-def">Amenazar con represalia para evitar cualquier ataque</div></div><div class="drag-slot" data-answer="deterrence" data-bank="1">Drop / Suelta</div></div>
+      <div class="drag-row"><div class="drag-def">A conflict growing more intense as each side raises the stakes<div class="es-def">Un conflicto que se vuelve más intenso</div></div><div class="drag-slot" data-answer="escalation" data-bank="1">Drop / Suelta</div></div>
+      <div class="drag-row"><div class="drag-def">Kennedy's naval blockade surrounding Cuba<div class="es-def">El bloqueo naval de Kennedy alrededor de Cuba</div></div><div class="drag-slot" data-answer="quarantine" data-bank="1">Drop / Suelta</div></div>
+      <div class="drag-row"><div class="drag-def">Kennedy's secret group of top advisers during the crisis<div class="es-def">El grupo secreto de asesores principales de Kennedy</div></div><div class="drag-slot" data-answer="ExComm" data-bank="1">Drop / Suelta</div></div>
+      <div class="drag-row"><div class="drag-def">Both sides destroyed if either fires — making war irrational<div class="es-def">Ambos lados destruidos si alguno dispara</div></div><div class="drag-slot" data-answer="mutual destruction" data-bank="1">Drop / Suelta</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- STORY 1 -->
+<div class="sec-card">
+  <div class="sec-header crisis">
+    <div class="sec-num">1</div>
+    <div class="sec-title-wrap">
+      <div class="sec-label">Story 1 / Historia 1</div>
+      <div class="sec-title">The Cuban Missile Crisis / La Crisis de los Misiles</div>
+    </div>
+  </div>
+  <div class="sec-body">
+
+    <div class="bilingual-passage">
+      <div class="passage-col en">
+        <span class="passage-lang-tag en-tag">🇺🇸 English</span>
+        <p>On October 16, 1962, President <strong>Kennedy</strong> was shown spy plane photos of Soviet nuclear missile sites in Cuba. The missiles could hit US cities in minutes. Kennedy secretly gathered his top advisers — called <strong>ExComm</strong> — to decide what to do. His choice would determine whether the world entered a nuclear war.</p>
+        <p>Kennedy had three options: bomb the missile sites, invade Cuba, or surround Cuba with ships. He rejected bombing because it could kill Soviet soldiers and start a war in Europe. Instead he chose a naval <strong>quarantine</strong> — US ships blocking Cuba. On October 22nd, he told the American people on television and demanded the Soviet Union remove the missiles.</p>
+      </div>
+      <div class="passage-col es">
+        <span class="passage-lang-tag es-tag">🇲🇽 Español</span>
+        <p>El 16 de octubre de 1962, el Presidente <strong>Kennedy</strong> vio fotos de aviones espía de los sitios de misiles nucleares soviéticos en Cuba. Los misiles podían golpear ciudades de EE.UU. en minutos. Kennedy reunió secretamente a sus asesores principales — llamados <strong>ExComm</strong> — para decidir qué hacer. Su decisión determinaría si el mundo entraba en guerra nuclear.</p>
+        <p>Kennedy tenía tres opciones: bombardear los sitios, invadir Cuba, o rodear Cuba con barcos. Rechazó el bombardeo porque podía matar soldados soviéticos e iniciar una guerra en Europa. En cambio eligió una <strong>cuarentena</strong> naval — barcos de EE.UU. bloqueando Cuba. El 22 de octubre se lo dijo al pueblo americano por televisión y exigió que la Unión Soviética retirara los misiles.</p>
+      </div>
+    </div>
+
+    <!-- IMAGE 2 -->
+    <div class="img-block" style="margin-bottom:14px;">
+      <img src="excomm.jpg"
+        alt="President Kennedy meeting with ExComm advisers, October 1962"
+        onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="img-placeholder" style="display:none">📸 Kennedy con ExComm / Kennedy with ExComm advisers, October 1962</div>
+      <div class="img-caption">El Presidente Kennedy con sus asesores de ExComm, octubre 1962. / President Kennedy with his ExComm advisers, October 1962. (Public Domain)</div>
+    </div>
+
+    <div class="click-instruction">💡 Click and drag to highlight / Haz clic y arrastra para marcar. <strong>Click highlight to remove / Haz clic para quitar.</strong></div>
+    <div class="bilingual-passage">
+      <div class="passage-col en highlightable" id="hl-crisis">
+        <span class="passage-lang-tag en-tag">🇺🇸 Highlight here / Marca aquí</span>
+        <p>Khrushchev refused to back down and sent an angry letter. Soviet ships kept moving toward the blockade. On October 24th, they suddenly stopped and turned around. Secretary Rusk whispered: "We're eyeball to eyeball, and I think the other fellow just blinked." But the crisis was not over. On October 27th — "Black Saturday" — a US spy plane was shot down over Cuba and the pilot was killed. Many generals pushed Kennedy to attack. He held back.</p>
+        <p>The solution came through secret diplomacy. Khrushchev sent two letters. Kennedy answered only the first — which offered a deal — while secretly agreeing to the second. The deal: the Soviet Union would remove missiles from Cuba, and the US would remove its missiles from Turkey and promise not to invade Cuba. On October 28th, Khrushchev agreed. The crisis was over. The world had come closer to nuclear war than ever before — or since.</p>
+      </div>
+      <div class="passage-col es">
+        <span class="passage-lang-tag es-tag">🇲🇽 Español</span>
+        <p>Khrushchev se negó a ceder y envió una carta enojada. Los barcos soviéticos siguieron avanzando hacia el bloqueo. El 24 de octubre, de repente se detuvieron y dieron la vuelta. El Secretario Rusk susurró: "Estamos cara a cara, y creo que el otro acaba de parpadear." Pero la crisis no había terminado. El 27 de octubre — "Sábado Negro" — un avión espía de EE.UU. fue derribado sobre Cuba y el piloto murió. Muchos generales presionaron a Kennedy para atacar. Él se contuvo.</p>
+        <p>La solución llegó a través de la diplomacia secreta. Khrushchev envió dos cartas. Kennedy respondió solo a la primera — que ofrecía un trato — mientras aceptaba secretamente la segunda. El trato: la Unión Soviética retiraría misiles de Cuba, y EE.UU. retiraría sus misiles de Turquía y prometería no invadir Cuba. El 28 de octubre, Khrushchev aceptó. La crisis había terminado. El mundo había estado más cerca de la guerra nuclear que nunca.</p>
+      </div>
+    </div>
+
+    <div class="justify-block">
+      <div class="justify-label">💬 Why did you highlight? / ¿Por qué marcaste?</div>
+      <div class="justify-es">Escribe en inglés o español. / Write in English or Spanish.</div>
+      <textarea id="justify-crisis" placeholder="I highlighted these parts because... / Marqué estas partes porque..." oninput="checkTA('justify-crisis');debouncedSave()"></textarea>
+    </div>
+
+    <!-- FIVE FACTS -->
+    <div class="facts-block">
+      <div class="facts-header">📋 Five Facts — Story 1 / Cinco hechos — Historia 1 <span style="font-weight:400;font-size:.8rem;">Write in English or Spanish / Escribe en inglés o español</span></div>
+      <div class="facts-body">
+        <div class="fact-row"><div class="fact-num">1</div><input type="text" id="fact-c1-1" placeholder="Hecho importante / Important fact..." oninput="checkFact('fact-c1-1');debouncedSave()"></div>
+        <div class="fact-row"><div class="fact-num">2</div><input type="text" id="fact-c1-2" placeholder="Hecho importante / Important fact..." oninput="checkFact('fact-c1-2');debouncedSave()"></div>
+        <div class="fact-row"><div class="fact-num">3</div><input type="text" id="fact-c1-3" placeholder="Hecho importante / Important fact..." oninput="checkFact('fact-c1-3');debouncedSave()"></div>
+        <div class="fact-row"><div class="fact-num">4</div><input type="text" id="fact-c1-4" placeholder="Hecho importante / Important fact..." oninput="checkFact('fact-c1-4');debouncedSave()"></div>
+        <div class="fact-row"><div class="fact-num">5</div><input type="text" id="fact-c1-5" placeholder="Hecho importante / Important fact..." oninput="checkFact('fact-c1-5');debouncedSave()"></div>
+      </div>
+    </div>
+
+    <div class="questions-eyebrow">✏️ Questions / Preguntas — Story 1</div>
+
+    <div class="mc-q">
+      <p>1. Why did Kennedy reject bombing the missile sites?</p>
+      <p class="mc-q-es">¿Por qué Kennedy rechazó bombardear los sitios de misiles?</p>
+      <div class="mc-opts">
+        <label class="mc-opt"><input type="radio" name="q1" value="A" onchange="checkMC('q1','B')"><span>A. He believed the missiles were not dangerous yet. / Creía que los misiles no eran peligrosos todavía.</span></label>
+        <label class="mc-opt"><input type="radio" name="q1" value="B" onchange="checkMC('q1','B')"><span>B. It could kill Soviet soldiers and trigger a war in Europe. / Podía matar soldados soviéticos e iniciar una guerra en Europa.</span></label>
+        <label class="mc-opt"><input type="radio" name="q1" value="C" onchange="checkMC('q1','B')"><span>C. The Soviet ships had already turned back. / Los barcos soviéticos ya habían dado la vuelta.</span></label>
+        <label class="mc-opt"><input type="radio" name="q1" value="D" onchange="checkMC('q1','B')"><span>D. The United Nations had ordered both sides to stop. / La ONU había ordenado a ambos lados detenerse.</span></label>
+      </div>
+      <div class="mc-fb" id="fb-q1"></div>
+    </div>
+
+    <div class="mc-q">
+      <p>2. What made "Black Saturday" especially dangerous?</p>
+      <p class="mc-q-es">¿Qué hizo que el "Sábado Negro" fuera especialmente peligroso?</p>
+      <div class="mc-opts">
+        <label class="mc-opt"><input type="radio" name="q2" value="A" onchange="checkMC('q2','C')"><span>A. Soviet ships crossed the blockade line. / Los barcos soviéticos cruzaron la línea del bloqueo.</span></label>
+        <label class="mc-opt"><input type="radio" name="q2" value="B" onchange="checkMC('q2','C')"><span>B. Khrushchev threatened to launch missiles. / Khrushchev amenazó con lanzar misiles.</span></label>
+        <label class="mc-opt"><input type="radio" name="q2" value="C" onchange="checkMC('q2','C')"><span>C. A US spy plane was shot down, pressuring Kennedy to retaliate. / Un avión espía fue derribado, presionando a Kennedy a represaliar.</span></label>
+        <label class="mc-opt"><input type="radio" name="q2" value="D" onchange="checkMC('q2','C')"><span>D. Cuba declared war on the United States. / Cuba declaró la guerra a los Estados Unidos.</span></label>
+      </div>
+      <div class="mc-fb" id="fb-q2"></div>
+    </div>
+
+    <div class="mc-q">
+      <p>3. How was the crisis resolved?</p>
+      <p class="mc-q-es">¿Cómo se resolvió la crisis?</p>
+      <div class="mc-opts">
+        <label class="mc-opt"><input type="radio" name="q3" value="A" onchange="checkMC('q3','D')"><span>A. The UN sent peacekeepers to dismantle the missiles. / La ONU envió soldados de paz para desmantelar los misiles.</span></label>
+        <label class="mc-opt"><input type="radio" name="q3" value="B" onchange="checkMC('q3','D')"><span>B. The US bombed and destroyed the missile sites. / EE.UU. bombardeó y destruyó los sitios de misiles.</span></label>
+        <label class="mc-opt"><input type="radio" name="q3" value="C" onchange="checkMC('q3','D')"><span>C. Castro ordered the Soviet military to leave Cuba. / Castro ordenó al ejército soviético salir de Cuba.</span></label>
+        <label class="mc-opt"><input type="radio" name="q3" value="D" onchange="checkMC('q3','D')"><span>D. USSR removed missiles from Cuba; US removed missiles from Turkey. / URSS retiró misiles de Cuba; EE.UU. retiró misiles de Turquía.</span></label>
+      </div>
+      <div class="mc-fb" id="fb-q3"></div>
+    </div>
+
+    <div class="mc-q">
+      <p>4. What does Rusk's quote "the other fellow just blinked" mean?</p>
+      <p class="mc-q-es">¿Qué significa la cita de Rusk "el otro acaba de parpadear"?</p>
+      <div class="mc-opts">
+        <label class="mc-opt"><input type="radio" name="q4" value="A" onchange="checkMC('q4','B')"><span>A. The Soviet Union was preparing a surprise attack. / La Unión Soviética preparaba un ataque sorpresa.</span></label>
+        <label class="mc-opt"><input type="radio" name="q4" value="B" onchange="checkMC('q4','B')"><span>B. Both sides were in a standoff and the Soviets backed down first. / Ambos lados estaban en un enfrentamiento y los soviéticos cedieron primero.</span></label>
+        <label class="mc-opt"><input type="radio" name="q4" value="C" onchange="checkMC('q4','B')"><span>C. The US had gained a military advantage over the Soviet ships. / EE.UU. había ganado ventaja militar sobre los barcos soviéticos.</span></label>
+        <label class="mc-opt"><input type="radio" name="q4" value="D" onchange="checkMC('q4','B')"><span>D. Rusk was recommending an immediate military strike. / Rusk recomendaba un ataque militar inmediato.</span></label>
+      </div>
+      <div class="mc-fb" id="fb-q4"></div>
+    </div>
+
+    <div class="mc-q">
+      <p>5. Which best describes Kennedy's overall strategy?</p>
+      <p class="mc-q-es">¿Cuál describe mejor la estrategia general de Kennedy?</p>
+      <div class="mc-opts">
+        <label class="mc-opt"><input type="radio" name="q5" value="A" onchange="checkMC('q5','C')"><span>A. Immediate military force to destroy the missiles. / Fuerza militar inmediata para destruir los misiles.</span></label>
+        <label class="mc-opt"><input type="radio" name="q5" value="B" onchange="checkMC('q5','C')"><span>B. Withdrawing from the region to avoid provoking the Soviets. / Retirarse de la región para no provocar a los soviéticos.</span></label>
+        <label class="mc-opt"><input type="radio" name="q5" value="C" onchange="checkMC('q5','C')"><span>C. Brinkmanship — pressure through blockade while keeping diplomacy open. / Política arriesgada — presión con bloqueo mientras mantiene la diplomacia.</span></label>
+        <label class="mc-opt"><input type="radio" name="q5" value="D" onchange="checkMC('q5','C')"><span>D. Asking the United Nations to mediate before taking action. / Pedir a la ONU que mediara antes de actuar.</span></label>
+      </div>
+      <div class="mc-fb" id="fb-q5"></div>
+    </div>
+
+    <!-- MAIN IDEA STORY 1 -->
+    <div style="margin-top:22px;">
+      <div class="questions-eyebrow">🎯 Main Idea / Idea Principal — Story 1</div>
+      <div class="frames-wrapper">
+        <div class="frames-label">Choose your frame / Elige tu marco</div>
+        <div class="frame-tabs" data-group="mi1">
+          <div class="frame-tab lv1 active" onclick="switchFrame('mi1','1')">Level 1 — Basic / Básico</div>
+          <div class="frame-tab lv4" onclick="switchFrame('mi1','4')">Independent / Independiente ✏️</div>
+        </div>
+        <div class="frame-panel active" id="fp-mi1-1">
+          <div class="frame-prompt">Story 1 is about how ___ and ___ almost started a nuclear war because ___, but the crisis ended when ___.</div>
+          <div class="frame-prompt-es">La Historia 1 trata de cómo ___ y ___ casi comenzaron una guerra nuclear porque ___, pero la crisis terminó cuando ___.</div>
+          <textarea id="mi1-1" placeholder="Complete the frame / Completa el marco..." oninput="checkTA('mi1-1');updateCERPara();debouncedSave()"></textarea>
+        </div>
+        <div class="frame-panel" id="fp-mi1-4">
+          <div class="frame-prompt">Write your own 2–3 sentence summary. / Escribe tu propio resumen de 2–3 oraciones.</div>
+          <textarea id="mi1-4" placeholder="Write in English or Spanish / Escribe en inglés o español..." oninput="checkTA('mi1-4');updateCERPara();debouncedSave()"></textarea>
+        </div>
+      </div>
+    </div>
+
+    <div class="partner-block">
+      <div class="partner-label">🤝 Partner Share / Comparte con tu compañero</div>
+      <p class="partner-prompt">"I think Kennedy's most important decision was ___ because ___."</p>
+      <p class="partner-prompt-es">"Creo que la decisión más importante de Kennedy fue ___ porque ___."</p>
+      <textarea id="partner-crisis" placeholder="Write what you discussed / Escribe lo que discutieron..." oninput="checkTA('partner-crisis');debouncedSave()"></textarea>
+    </div>
+
+  </div>
+</div>
+
+<!-- STORY 2 VOCAB -->
+<div class="vocab-section">
+  <div class="vocab-header">📖 Key Vocabulary — Story 2 / Vocabulario — Historia 2 <span>Read before Story 2 / Lee antes de la Historia 2</span></div>
+  <div class="vocab-grid">
+    <div class="vocab-card">
+      <div class="vocab-word">dissent</div>
+      <div class="vocab-def">Disagreeing with a decision, especially under extreme pressure.</div>
+      <div class="vocab-es">disentimiento — No estar de acuerdo con una decisión bajo presión extrema.</div>
+    </div>
+    <div class="vocab-card">
+      <div class="vocab-word">protocol</div>
+      <div class="vocab-def">Official rules that must be followed in military situations.</div>
+      <div class="vocab-es">protocolo — Reglas oficiales que deben seguirse en situaciones militares.</div>
+    </div>
+    <div class="vocab-card">
+      <div class="vocab-word">authorization</div>
+      <div class="vocab-def">Official permission required before taking an action.</div>
+      <div class="vocab-es">autorización — Permiso oficial requerido antes de tomar una acción.</div>
+    </div>
+    <div class="vocab-card">
+      <div class="vocab-word">inadvertent</div>
+      <div class="vocab-def">Something that happens accidentally — not on purpose.</div>
+      <div class="vocab-es">inadvertido — Algo que ocurre accidentalmente, no a propósito.</div>
+    </div>
+    <div class="vocab-card">
+      <div class="vocab-word">catastrophic</div>
+      <div class="vocab-def">Causing enormous, unrecoverable damage or disaster.</div>
+      <div class="vocab-es">catastrófico — Que causa un daño enorme e irreparable.</div>
+    </div>
+    <div class="vocab-card">
+      <div class="vocab-word">restraint</div>
+      <div class="vocab-def">Holding back from action when under pressure to escalate.</div>
+      <div class="vocab-es">contención — Contenerse de actuar cuando hay presión para escalar.</div>
+    </div>
+  </div>
+</div>
+
+<!-- DRAG DROP STORY 2 -->
+<div class="drag-section">
+  <div class="drag-header">🧩 Vocabulary Match — Story 2 / Empareja el vocabulario — Historia 2
+    <span class="es">Drag each word to its definition. / Arrastra cada palabra a su definición.</span>
+  </div>
+  <div class="drag-body">
+    <div class="drag-chips" id="chipBank2">
+      <div class="chip" draggable="true" data-word="dissent" id="chip2-dissent">dissent</div>
+      <div class="chip" draggable="true" data-word="protocol" id="chip2-protocol">protocol</div>
+      <div class="chip" draggable="true" data-word="authorization" id="chip2-authorization">authorization</div>
+      <div class="chip" draggable="true" data-word="inadvertent" id="chip2-inadvertent">inadvertent</div>
+      <div class="chip" draggable="true" data-word="catastrophic" id="chip2-catastrophic">catastrophic</div>
+      <div class="chip" draggable="true" data-word="restraint" id="chip2-restraint">restraint</div>
+    </div>
+    <div class="drag-rows">
+      <div class="drag-row"><div class="drag-def">Refusing to agree with a decision under extreme pressure<div class="es-def">Negarse a estar de acuerdo bajo presión extrema</div></div><div class="drag-slot" data-answer="dissent" data-bank="2">Drop / Suelta</div></div>
+      <div class="drag-row"><div class="drag-def">Official rules that must be followed in military situations<div class="es-def">Reglas oficiales que deben seguirse en situaciones militares</div></div><div class="drag-slot" data-answer="protocol" data-bank="2">Drop / Suelta</div></div>
+      <div class="drag-row"><div class="drag-def">Official permission required before taking an action<div class="es-def">Permiso oficial requerido antes de tomar una acción</div></div><div class="drag-slot" data-answer="authorization" data-bank="2">Drop / Suelta</div></div>
+      <div class="drag-row"><div class="drag-def">Something that happens accidentally — not on purpose<div class="es-def">Algo que ocurre por accidente, no a propósito</div></div><div class="drag-slot" data-answer="inadvertent" data-bank="2">Drop / Suelta</div></div>
+      <div class="drag-row"><div class="drag-def">Causing enormous, unrecoverable damage<div class="es-def">Que causa daño enorme e irreparable</div></div><div class="drag-slot" data-answer="catastrophic" data-bank="2">Drop / Suelta</div></div>
+      <div class="drag-row"><div class="drag-def">Holding back from action when under pressure to escalate<div class="es-def">Contenerse cuando hay presión para escalar</div></div><div class="drag-slot" data-answer="restraint" data-bank="2">Drop / Suelta</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- STORY 2 -->
+<div class="sec-card">
+  <div class="sec-header arkhipov">
+    <div class="sec-num">2</div>
+    <div class="sec-title-wrap">
+      <div class="sec-label">Story 2 / Historia 2</div>
+      <div class="sec-title">The Man Who Saved the World / El Hombre que Salvó el Mundo</div>
+    </div>
+  </div>
+  <div class="sec-body">
+
+    <div class="bilingual-passage">
+      <div class="passage-col en">
+        <span class="passage-lang-tag en-tag">🇺🇸 English</span>
+        <p>While Kennedy and Khrushchev negotiated, something very dangerous was happening underwater. A Soviet <strong>submarine</strong> called <strong>B-59</strong> was hidden near Cuba. It had lost contact with Moscow for days. The crew did not know if a war had already started above the surface.</p>
+        <p>Inside the submarine, conditions were desperate. The temperature was over 100°F. The air was running out. Crew members were losing consciousness. The captain, <strong>Valentin Savitsky</strong>, had not slept for days. When US ships dropped small depth charges nearby — a signal to surface, not an attack — Savitsky believed World War III had already started. He ordered the nuclear torpedo to be prepared for launch.</p>
+      </div>
+      <div class="passage-col es">
+        <span class="passage-lang-tag es-tag">🇲🇽 Español</span>
+        <p>Mientras Kennedy y Khrushchev negociaban, algo muy peligroso ocurría bajo el agua. Un <strong>submarino</strong> soviético llamado <strong>B-59</strong> estaba escondido cerca de Cuba. Había perdido contacto con Moscú por días. La tripulación no sabía si ya había comenzado una guerra en la superficie.</p>
+        <p>Dentro del submarino, las condiciones eran desesperadas. La temperatura superaba los 37°C. El aire se agotaba. Los miembros de la tripulación perdían el conocimiento. El capitán, <strong>Valentin Savitsky</strong>, no había dormido por días. Cuando los barcos de EE.UU. lanzaron pequeñas cargas de profundidad — una señal para salir a la superficie, no un ataque — Savitsky creyó que la Tercera Guerra Mundial ya había comenzado. Ordenó preparar el torpedo nuclear para su lanzamiento.</p>
+      </div>
+    </div>
+
+    <!-- IMAGES 3 & 4 -->
+    <div class="img-grid">
+      <div class="img-block" style="margin-bottom:0;">
+        <img src="https://nsarchive.gwu.edu/sites/default/files/styles/wide/public/2022-10/asw1.jpg?itok=JXJj96QJ"
+          alt="Soviet submarine B-59 surfacing, October 1962"
+          onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <div class="img-placeholder" style="display:none">📸 Submarino B-59 / Soviet submarine B-59</div>
+        <div class="img-caption">El submarino soviético B-59 saliendo a la superficie, octubre 1962. / Soviet submarine B-59 surfacing, October 1962. (Public Domain)</div>
+      </div>
+      <div class="img-block" style="margin-bottom:0;">
+        <img src="arkhipov.jpg"
+          alt="Vasili Arkhipov, the Soviet officer who said NO"
+          onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <div class="img-placeholder" style="display:none">📸 Vasili Arkhipov</div>
+        <div class="img-caption">Vasili Arkhipov, el oficial soviético que dijo NO. / Vasili Arkhipov, the Soviet officer who said NO. (Public Domain)</div>
+      </div>
+    </div>
+
+    <div class="click-instruction">💡 Click and drag to highlight / Haz clic y arrastra para marcar. <strong>Click highlight to remove / Haz clic para quitar.</strong></div>
+    <div class="bilingual-passage">
+      <div class="passage-col en highlightable" id="hl-ark">
+        <span class="passage-lang-tag en-tag">🇺🇸 Highlight here / Marca aquí</span>
+        <p>Soviet <strong>protocol</strong> required three officers to <strong>authorize</strong> a nuclear launch: the captain, the political officer, and one more. Captain Savitsky said YES. The political officer said YES. But the third officer — <strong>Vasili Arkhipov</strong> — said NO. Calmly, he argued: without confirmed orders from Moscow, firing a nuclear weapon would be an unforgivable act that could trigger a nuclear exchange. He insisted the submarine surface first.</p>
+        <p>Savitsky, exhausted and furious, argued with Arkhipov. Eventually he agreed. The B-59 surfaced. US destroyers surrounded it — but both sides stood down. The torpedo was never launched. The world would not learn Arkhipov's name for forty years. When his story became public in 2002, scholar Thomas Blanton said simply: "A man named Arkhipov saved the world."</p>
+      </div>
+      <div class="passage-col es">
+        <span class="passage-lang-tag es-tag">🇲🇽 Español</span>
+        <p>El <strong>protocolo</strong> soviético requería que tres oficiales <strong>autorizaran</strong> un lanzamiento nuclear: el capitán, el oficial político, y uno más. El Capitán Savitsky dijo SÍ. El oficial político dijo SÍ. Pero el tercer oficial — <strong>Vasili Arkhipov</strong> — dijo NO. Con calma, argumentó: sin órdenes confirmadas de Moscú, disparar un arma nuclear sería un acto imperdonable que podría desencadenar un intercambio nuclear. Insistió en que el submarino saliera a la superficie primero.</p>
+        <p>Savitsky, agotado y furioso, discutió con Arkhipov. Finalmente aceptó. El B-59 salió a la superficie. Los destructores de EE.UU. lo rodearon — pero ambos lados se detuvieron. El torpedo nunca fue lanzado. El mundo no conocería el nombre de Arkhipov por cuarenta años. Cuando su historia se hizo pública en 2002, el historiador Thomas Blanton dijo simplemente: "Un hombre llamado Arkhipov salvó el mundo."</p>
+      </div>
+    </div>
+
+    <div class="justify-block">
+      <div class="justify-label">💬 Why did you highlight? / ¿Por qué marcaste?</div>
+      <div class="justify-es">Escribe en inglés o español. / Write in English or Spanish.</div>
+      <textarea id="justify-ark" placeholder="I highlighted these parts because... / Marqué estas partes porque..." oninput="checkTA('justify-ark');debouncedSave()"></textarea>
+    </div>
+
+    <!-- FIVE FACTS STORY 2 -->
+    <div class="facts-block">
+      <div class="facts-header">📋 Five Facts — Story 2 / Cinco hechos — Historia 2 <span style="font-weight:400;font-size:.8rem;">English or Spanish / Inglés o español</span></div>
+      <div class="facts-body">
+        <div class="fact-row"><div class="fact-num">1</div><input type="text" id="fact-a1-1" placeholder="Hecho importante / Important fact..." oninput="checkFact('fact-a1-1');debouncedSave()"></div>
+        <div class="fact-row"><div class="fact-num">2</div><input type="text" id="fact-a1-2" placeholder="Hecho importante / Important fact..." oninput="checkFact('fact-a1-2');debouncedSave()"></div>
+        <div class="fact-row"><div class="fact-num">3</div><input type="text" id="fact-a1-3" placeholder="Hecho importante / Important fact..." oninput="checkFact('fact-a1-3');debouncedSave()"></div>
+        <div class="fact-row"><div class="fact-num">4</div><input type="text" id="fact-a1-4" placeholder="Hecho importante / Important fact..." oninput="checkFact('fact-a1-4');debouncedSave()"></div>
+        <div class="fact-row"><div class="fact-num">5</div><input type="text" id="fact-a1-5" placeholder="Hecho importante / Important fact..." oninput="checkFact('fact-a1-5');debouncedSave()"></div>
+      </div>
+    </div>
+
+    <div class="questions-eyebrow">✏️ Questions / Preguntas — Story 2</div>
+
+    <div class="mc-q">
+      <p>6. What conditions inside B-59 explain why Savitsky believed the war had started?</p>
+      <p class="mc-q-es">¿Qué condiciones dentro del B-59 explican por qué Savitsky creyó que la guerra había comenzado?</p>
+      <div class="mc-opts">
+        <label class="mc-opt"><input type="radio" name="q6" value="A" onchange="checkMC('q6','A')"><span>A. No contact with Moscow, extreme heat, rising CO₂, and US depth charges nearby. / Sin contacto con Moscú, calor extremo, CO₂ creciente, y cargas de EE.UU. cerca.</span></label>
+        <label class="mc-opt"><input type="radio" name="q6" value="B" onchange="checkMC('q6','A')"><span>B. He received a garbled message he interpreted as a launch order. / Recibió un mensaje confuso que interpretó como una orden de lanzamiento.</span></label>
+        <label class="mc-opt"><input type="radio" name="q6" value="C" onchange="checkMC('q6','A')"><span>C. Another Soviet submarine told him the war had begun. / Otro submarino soviético le dijo que la guerra había comenzado.</span></label>
+        <label class="mc-opt"><input type="radio" name="q6" value="D" onchange="checkMC('q6','A')"><span>D. Kennedy's TV address was intercepted and misunderstood. / El discurso televisivo de Kennedy fue interceptado y malentendido.</span></label>
+      </div>
+      <div class="mc-fb" id="fb-q6"></div>
+    </div>
+
+    <div class="mc-q">
+      <p>7. Why was Arkhipov's position essential to preventing the launch?</p>
+      <p class="mc-q-es">¿Por qué la posición de Arkhipov fue esencial para evitar el lanzamiento?</p>
+      <div class="mc-opts">
+        <label class="mc-opt"><input type="radio" name="q7" value="A" onchange="checkMC('q7','B')"><span>A. He was the only officer trained to arm the torpedo. / Era el único oficial entrenado para armar el torpedo.</span></label>
+        <label class="mc-opt"><input type="radio" name="q7" value="B" onchange="checkMC('q7','B')"><span>B. Soviet protocol required all three officers to agree; his refusal stopped the launch. / El protocolo soviético requería que los tres oficiales estuvieran de acuerdo; su negativa detuvo el lanzamiento.</span></label>
+        <label class="mc-opt"><input type="radio" name="q7" value="C" onchange="checkMC('q7','B')"><span>C. He outranked the captain and could override any order. / Tenía mayor rango que el capitán y podía anular cualquier orden.</span></label>
+        <label class="mc-opt"><input type="radio" name="q7" value="D" onchange="checkMC('q7','B')"><span>D. He had already disabled the torpedo as a safety precaution. / Ya había desactivado el torpedo como medida de seguridad.</span></label>
+      </div>
+      <div class="mc-fb" id="fb-q7"></div>
+    </div>
+
+    <div class="mc-q">
+      <p>8. What does Blanton's quote "A man named Arkhipov saved the world" suggest?</p>
+      <p class="mc-q-es">¿Qué sugiere la cita de Blanton "Un hombre llamado Arkhipov salvó el mundo"?</p>
+      <div class="mc-opts">
+        <label class="mc-opt"><input type="radio" name="q8" value="A" onchange="checkMC('q8','C')"><span>A. Historical events are always controlled by the most powerful leaders. / Los eventos históricos siempre son controlados por los líderes más poderosos.</span></label>
+        <label class="mc-opt"><input type="radio" name="q8" value="B" onchange="checkMC('q8','C')"><span>B. The Soviet Union was more responsible for managing the crisis safely. / La Unión Soviética fue más responsable en manejar la crisis con seguridad.</span></label>
+        <label class="mc-opt"><input type="radio" name="q8" value="C" onchange="checkMC('q8','C')"><span>C. Individual decisions by ordinary people can determine the course of history. / Las decisiones individuales de personas comunes pueden determinar el curso de la historia.</span></label>
+        <label class="mc-opt"><input type="radio" name="q8" value="D" onchange="checkMC('q8','C')"><span>D. Nuclear weapons have enough safeguards to prevent accidental launches. / Las armas nucleares tienen suficientes salvaguardas para evitar lanzamientos accidentales.</span></label>
+      </div>
+      <div class="mc-fb" id="fb-q8"></div>
+    </div>
+
+    <div class="mc-q">
+      <p>9. Why did the US depth charges represent a dangerous misunderstanding?</p>
+      <p class="mc-q-es">¿Por qué las cargas de profundidad de EE.UU. representaron un malentendido peligroso?</p>
+      <div class="mc-opts">
+        <label class="mc-opt"><input type="radio" name="q9" value="A" onchange="checkMC('q9','D')"><span>A. They were meant to destroy the submarine but failed. / Estaban destinadas a destruir el submarino pero fallaron.</span></label>
+        <label class="mc-opt"><input type="radio" name="q9" value="B" onchange="checkMC('q9','D')"><span>B. Soviet protocol required submarines to fire torpedoes in response. / El protocolo soviético requería que los submarinos respondieran con torpedos.</span></label>
+        <label class="mc-opt"><input type="radio" name="q9" value="C" onchange="checkMC('q9','D')"><span>C. The US Navy did not know the sub was carrying nuclear weapons. / La Marina de EE.UU. no sabía que el submarino llevaba armas nucleares.</span></label>
+        <label class="mc-opt"><input type="radio" name="q9" value="D" onchange="checkMC('q9','D')"><span>D. They were a signal to surface, but Savitsky interpreted them as an attack. / Eran una señal para salir a la superficie, pero Savitsky las interpretó como un ataque.</span></label>
+      </div>
+      <div class="mc-fb" id="fb-q9"></div>
+    </div>
+
+    <div class="mc-q">
+      <p>10. Which best states the main idea of Story 2?</p>
+      <p class="mc-q-es">¿Cuál expresa mejor la idea principal de la Historia 2?</p>
+      <div class="mc-opts">
+        <label class="mc-opt"><input type="radio" name="q10" value="A" onchange="checkMC('q10','B')"><span>A. The Soviet military was dangerously disorganized during the crisis. / El ejército soviético estaba peligrosamente desorganizado durante la crisis.</span></label>
+        <label class="mc-opt"><input type="radio" name="q10" value="B" onchange="checkMC('q10','B')"><span>B. While leaders negotiated, one officer's refusal may have been the most important act of restraint during the entire crisis. / Mientras los líderes negociaban, la negativa de un oficial pudo haber sido el acto de contención más importante de toda la crisis.</span></label>
+        <label class="mc-opt"><input type="radio" name="q10" value="C" onchange="checkMC('q10','B')"><span>C. The crisis showed nuclear weapons are too unreliable to use as deterrence. / La crisis mostró que las armas nucleares son demasiado poco confiables para usarse como disuasión.</span></label>
+        <label class="mc-opt"><input type="radio" name="q10" value="D" onchange="checkMC('q10','B')"><span>D. Arkhipov's story proves the USSR never intended to use nuclear weapons. / La historia de Arkhipov prueba que la URSS nunca tuvo intención de usar armas nucleares.</span></label>
+      </div>
+      <div class="mc-fb" id="fb-q10"></div>
+    </div>
+
+    <!-- MAIN IDEA STORY 2 -->
+    <div style="margin-top:22px;">
+      <div class="questions-eyebrow">🎯 Main Idea / Idea Principal — Story 2</div>
+      <div class="frames-wrapper">
+        <div class="frames-label">Choose your frame / Elige tu marco</div>
+        <div class="frame-tabs" data-group="mi2">
+          <div class="frame-tab lv1 active" onclick="switchFrame('mi2','1')">Level 1 — Basic / Básico</div>
+          <div class="frame-tab lv4" onclick="switchFrame('mi2','4')">Independent / Independiente ✏️</div>
+        </div>
+        <div class="frame-panel active" id="fp-mi2-1">
+          <div class="frame-prompt">Story 2 is about a man named ___ who prevented nuclear war by ___. Without him, ___.</div>
+          <div class="frame-prompt-es">La Historia 2 trata de un hombre llamado ___ que evitó la guerra nuclear al ___. Sin él, ___.</div>
+          <textarea id="mi2-1" placeholder="Complete the frame / Completa el marco..." oninput="checkTA('mi2-1');updateCERPara();debouncedSave()"></textarea>
+        </div>
+        <div class="frame-panel" id="fp-mi2-4">
+          <div class="frame-prompt">Write your own 2–3 sentence summary. / Escribe tu propio resumen de 2–3 oraciones.</div>
+          <textarea id="mi2-4" placeholder="Write in English or Spanish / Escribe en inglés o español..." oninput="checkTA('mi2-4');updateCERPara();debouncedSave()"></textarea>
+        </div>
+      </div>
+    </div>
+
+    <div class="partner-block">
+      <div class="partner-label">🤝 Partner Share / Comparte con tu compañero</div>
+      <p class="partner-prompt">"What Arkhipov did was significant because ___. Without him, ___."</p>
+      <p class="partner-prompt-es">"Lo que hizo Arkhipov fue importante porque ___. Sin él, ___."</p>
+      <textarea id="partner-ark" placeholder="Write what you discussed / Escribe lo que discutieron..." oninput="checkTA('partner-ark');debouncedSave()"></textarea>
+    </div>
+
+  </div>
+</div>
+
+<!-- CER -->
+<div class="cer-card">
+  <div class="cer-header">
+    <h3>✍️ Claim, Evidence &amp; Reasoning / Afirmación, Evidencia y Razonamiento</h3>
+    <div class="eq">Essential Question: Was the world saved by careful strategy — or by luck?</div>
+    <div class="eq-es">Pregunta esencial: ¿El mundo fue salvado por estrategia cuidadosa — o por suerte?</div>
+  </div>
+  <div class="cer-body">
+
+    <div class="cer-prompt">
+      <p>Use evidence from BOTH stories. / Usa evidencia de LAS DOS historias.</p>
+      <p class="es">⚠️ Use at least 4 vocabulary words. They will turn gold as you type them. / Usa al menos 4 palabras del vocabulario. Se volverán doradas cuando las escribas.</p>
+    </div>
+
+    <div class="wb-header">
+      📦 Word Bank / Banco de palabras — use at least 4 / usa al menos 4
+      <div class="wb-counter" id="wbCounter">0 / 4 used</div>
+    </div>
+    <div class="cer-word-bank" id="cerWordBank">
+      <div class="cer-chip" data-word="brinkmanship">brinkmanship<span>política arriesgada</span></div>
+      <div class="cer-chip" data-word="deterrence">deterrence<span>disuasión</span></div>
+      <div class="cer-chip" data-word="escalation">escalation<span>escalada</span></div>
+      <div class="cer-chip" data-word="dissent">dissent<span>disentimiento</span></div>
+      <div class="cer-chip" data-word="quarantine">quarantine<span>cuarentena</span></div>
+      <div class="cer-chip" data-word="mutual destruction">mutual destruction<span>destrucción mutua</span></div>
+      <div class="cer-chip" data-word="protocol">protocol<span>protocolo</span></div>
+      <div class="cer-chip" data-word="restraint">restraint<span>contención</span></div>
+      <div class="cer-chip" data-word="inadvertent">inadvertent<span>inadvertido</span></div>
+      <div class="cer-chip" data-word="catastrophic">catastrophic<span>catastrófico</span></div>
+      <div class="cer-chip" data-word="authorization">authorization<span>autorización</span></div>
+      <div class="cer-chip" data-word="ExComm">ExComm<span>asesores de Kennedy</span></div>
+    </div>
+
+    <!-- CLAIM -->
+    <div class="cer-part-label">
+      <div class="cer-badge badge-c">C</div>
+      <div><div class="cer-part-title">Claim / Afirmación</div><div class="cer-part-es">Your answer to the essential question / Tu respuesta a la pregunta esencial</div></div>
+    </div>
+    <div class="frames-wrapper">
+      <div class="frame-tabs" data-group="claim">
+        <div class="frame-tab lv1 active" onclick="switchFrame('claim','1')">Level 1</div>
+        <div class="frame-tab lv4" onclick="switchFrame('claim','4')">Independent ✏️</div>
+      </div>
+      <div class="frame-panel active" id="fp-claim-1">
+        <div class="frame-prompt">I think the world was saved by ___ (strategy / luck / both) because ___.</div>
+        <div class="frame-prompt-es">Creo que el mundo fue salvado por ___ (estrategia / suerte / ambos) porque ___.</div>
+        <textarea id="claim-1" placeholder="Complete the frame / Completa el marco..." oninput="checkTA('claim-1');updateCERPara();debouncedSave();"></textarea>
+      </div>
+      <div class="frame-panel" id="fp-claim-4">
+        <div class="frame-prompt">Write your own claim. / Escribe tu propia afirmación.</div>
+        <textarea id="claim-4" placeholder="Write in English or Spanish / Escribe en inglés o español..." oninput="checkTA('claim-4');updateCERPara();debouncedSave();"></textarea>
+      </div>
+    </div>
+
+    <hr class="cer-divider">
+
+    <!-- EVIDENCE 1 -->
+    <div class="cer-part-label">
+      <div class="cer-badge badge-e">E</div>
+      <div><div class="cer-part-title">Evidence — Story 1 / Evidencia — Historia 1</div></div>
+    </div>
+    <div class="frames-wrapper">
+      <div class="frame-tabs" data-group="ev1">
+        <div class="frame-tab lv1 active" onclick="switchFrame('ev1','1')">Level 1</div>
+        <div class="frame-tab lv4" onclick="switchFrame('ev1','4')">Independent ✏️</div>
+      </div>
+      <div class="frame-panel active" id="fp-ev1-1">
+        <div class="frame-prompt">In Story 1, Kennedy decided to ___ instead of ___. This shows ___.</div>
+        <div class="frame-prompt-es">En la Historia 1, Kennedy decidió ___ en lugar de ___. Esto muestra ___.</div>
+        <textarea id="ev1-1" placeholder="Complete the frame / Completa el marco..." oninput="checkTA('ev1-1');updateCERPara();debouncedSave();"></textarea>
+      </div>
+      <div class="frame-panel" id="fp-ev1-4">
+        <div class="frame-prompt">Write your own evidence from Story 1. / Escribe tu propia evidencia de la Historia 1.</div>
+        <textarea id="ev1-4" placeholder="Write in English or Spanish / Escribe en inglés o español..." oninput="checkTA('ev1-4');updateCERPara();debouncedSave();"></textarea>
+      </div>
+    </div>
+
+    <!-- EVIDENCE 2 -->
+    <div class="cer-part-label">
+      <div class="cer-badge badge-e">E</div>
+      <div><div class="cer-part-title">Evidence — Story 2 / Evidencia — Historia 2</div></div>
+    </div>
+    <div class="frames-wrapper">
+      <div class="frame-tabs" data-group="ev2">
+        <div class="frame-tab lv1 active" onclick="switchFrame('ev2','1')">Level 1</div>
+        <div class="frame-tab lv4" onclick="switchFrame('ev2','4')">Independent ✏️</div>
+      </div>
+      <div class="frame-panel active" id="fp-ev2-1">
+        <div class="frame-prompt">In Story 2, Arkhipov said ___ when the captain wanted to ___. This was important because ___.</div>
+        <div class="frame-prompt-es">En la Historia 2, Arkhipov dijo ___ cuando el capitán quería ___. Esto fue importante porque ___.</div>
+        <textarea id="ev2-1" placeholder="Complete the frame / Completa el marco..." oninput="checkTA('ev2-1');updateCERPara();debouncedSave();"></textarea>
+      </div>
+      <div class="frame-panel" id="fp-ev2-4">
+        <div class="frame-prompt">Write your own evidence from Story 2. / Escribe tu propia evidencia de la Historia 2.</div>
+        <textarea id="ev2-4" placeholder="Write in English or Spanish / Escribe en inglés o español..." oninput="checkTA('ev2-4');updateCERPara();debouncedSave();"></textarea>
+      </div>
+    </div>
+
+    <hr class="cer-divider">
+
+    <!-- REASONING -->
+    <div class="cer-part-label">
+      <div class="cer-badge badge-r">R</div>
+      <div><div class="cer-part-title">Reasoning / Razonamiento</div><div class="cer-part-es">Connect your evidence to your claim / Conecta tu evidencia con tu afirmación</div></div>
+    </div>
+    <div class="frames-wrapper">
+      <div class="frame-tabs" data-group="rea">
+        <div class="frame-tab lv1 active" onclick="switchFrame('rea','1')">Level 1</div>
+        <div class="frame-tab lv4" onclick="switchFrame('rea','4')">Independent ✏️</div>
+      </div>
+      <div class="frame-panel active" id="fp-rea-1">
+        <div class="frame-prompt">This evidence shows that the world was saved by ___ because ___.</div>
+        <div class="frame-prompt-es">Esta evidencia muestra que el mundo fue salvado por ___ porque ___.</div>
+        <textarea id="rea-1" placeholder="Complete the frame / Completa el marco..." oninput="checkTA('rea-1');updateCERPara();debouncedSave();"></textarea>
+      </div>
+      <div class="frame-panel" id="fp-rea-4">
+        <div class="frame-prompt">Write your own reasoning. / Escribe tu propio razonamiento.</div>
+        <textarea id="rea-4" placeholder="Write in English or Spanish / Escribe en inglés o español..." oninput="checkTA('rea-4');updateCERPara();debouncedSave();"></textarea>
+      </div>
+    </div>
+
+    <!-- ASSEMBLED PARAGRAPH -->
+    <div class="para-assembly">
+      <div class="para-assembly-label">📄 Your CER Paragraph / Tu párrafo de CER — assembled as you write / se construye mientras escribes</div>
+      <div class="para-assembly-text" id="paraAssembly">
+        <span class="para-placeholder">Your paragraph will appear here as you write above. / Tu párrafo aparecerá aquí mientras escribes arriba.</span>
+      </div>
+      <button class="para-copy-btn" onclick="copyPara()">📋 Copy / Copiar</button>
+    </div>
+
+  </div>
+</div>
+
+<div class="action-row">
+  <button class="btn btn-primary" onclick="gradeActivity()">✓ Check My Work / Revisar mi trabajo</button>
+  <button class="btn btn-secondary" onclick="savePDF()">⬇ Save as PDF / Guardar PDF</button>
+</div>
+<div class="save-notice" id="saveNotice">✓ Saved / Guardado</div>
+<div class="grade-panel" id="gradePanel">
+  <div class="grade-title">Completion Check / Revisión de Completitud</div>
+  <div class="grade-score" id="gradeScore">—</div>
+  <div class="grade-rows" id="gradeRows"></div>
+</div>
+
+</div>
+
+<script>
+const MC_KEY = { q1:'B',q2:'C',q3:'D',q4:'B',q5:'C',q6:'A',q7:'B',q8:'C',q9:'D',q10:'B' };
+const VOCAB_WORDS = ['brinkmanship','deterrence','escalation','dissent','quarantine','mutual destruction','protocol','restraint','inadvertent','catastrophic','authorization','ExComm'];
+const MIN = 10;
+const FACT_MIN = 5;
+const STORAGE_KEY = 'cms_newcomer_v3';
+let draggedChip = null;
+let draggedFromBank = null;
+let progressTimer = null;
+let saveTimer = null;
+
+function debouncedProgress() {
+  clearTimeout(progressTimer);
+  progressTimer = setTimeout(updateProgress, 600);
+}
+function debouncedSave() {
+  clearTimeout(saveTimer);
+  saveTimer = setTimeout(autoSave, 1000);
+}
+
+// ── DRAG ──────────────────────────────────────────────
+function initDrag() {
+  document.querySelectorAll('.chip').forEach(chip => {
+    chip.addEventListener('dragstart', () => { draggedChip=chip; draggedFromBank=chip.parentElement; setTimeout(()=>chip.classList.add('dragging'),0); });
+    chip.addEventListener('dragend', () => { chip.classList.remove('dragging'); draggedChip=null; });
+  });
+  document.querySelectorAll('.drag-slot').forEach(slot => {
+    slot.addEventListener('dragover', e => { e.preventDefault(); slot.classList.add('over'); });
+    slot.addEventListener('dragleave', () => slot.classList.remove('over'));
+    slot.addEventListener('drop', e => {
+      e.preventDefault(); slot.classList.remove('over');
+      if (!draggedChip) return;
+      const existing = slot.querySelector('.chip');
+      if (existing) { existing.classList.remove('placed'); draggedFromBank&&draggedFromBank.appendChild(existing); }
+      slot.innerHTML=''; slot.appendChild(draggedChip); draggedChip.classList.add('placed');
+      const correct = draggedChip.dataset.word===slot.dataset.answer;
+      slot.classList.toggle('correct',correct); slot.classList.toggle('incorrect',!correct);
+      autoSave(); updateProgress();
+    });
+  });
+}
+
+// ── HIGHLIGHT ─────────────────────────────────────────
+function initHighlight(id) {
+  const el = document.getElementById(id);
+  if (!el) return;
+  el.addEventListener('mouseup', () => {
+    const sel = window.getSelection();
+    if (!sel||sel.isCollapsed) return;
+    const range = sel.getRangeAt(0);
+    if (!el.contains(range.commonAncestorContainer)) return;
+    const mark = document.createElement('mark');
+    mark.className='hl-mark';
+    mark.title='Click to remove / Haz clic para quitar';
+    mark.addEventListener('click', ()=>{ unwrap(mark); autoSave(); });
+    try { range.surroundContents(mark); } catch(e) { const f=range.extractContents(); mark.appendChild(f); range.insertNode(mark); }
+    sel.removeAllRanges();
+    autoSave();
+  });
+  el.querySelectorAll('mark.hl-mark').forEach(m=>m.addEventListener('click',()=>{ unwrap(m); autoSave(); }));
+}
+function unwrap(mark) {
+  const p=mark.parentNode;
+  while(mark.firstChild) p.insertBefore(mark.firstChild,mark);
+  p.removeChild(mark); p.normalize();
+}
+
+// ── FRAME TABS ────────────────────────────────────────
+function switchFrame(group, level) {
+  [1,4].forEach(l => {
+    const panel = document.getElementById(`fp-${group}-${l}`);
+    if (panel) panel.classList.toggle('active', String(l)===level);
+  });
+  document.querySelectorAll(`[onclick*="switchFrame('${group}'"]`).forEach((tab,i) => {
+    tab.classList.toggle('active', i===0 ? level==='1' : level==='4');
+  });
+}
+
+// ── MC ────────────────────────────────────────────────
+function checkMC(name, correct) {
+  const sel = document.querySelector(`input[name="${name}"]:checked`);
+  if (!sel) return;
+  const isCorrect = sel.value===correct;
+  document.querySelectorAll(`input[name="${name}"]`).forEach(o => {
+    const lbl=o.closest('.mc-opt');
+    if(o.value===correct) lbl.classList.add('correct');
+    else if(o.checked&&!isCorrect) lbl.classList.add('incorrect');
+    o.disabled=true; lbl.classList.add('locked');
+  });
+  const fb=document.getElementById('fb-'+name);
+  fb.className='mc-fb show '+(isCorrect?'correct':'incorrect');
+  fb.textContent=isCorrect?'✓ Correct! / ¡Correcto!':`✗ Review the passage. Answer: ${correct} / Revisa el texto. Respuesta: ${correct}`;
+  autoSave(); updateProgress();
+}
+
+// ── TEXT & FACTS ──────────────────────────────────────
+function checkTA(id) { const el=document.getElementById(id); if(!el) return; el.classList.toggle('complete',el.value.trim().length>=MIN); debouncedProgress(); }
+function checkFact(id) { const el=document.getElementById(id); if(!el) return; el.classList.toggle('complete',el.value.trim().length>=FACT_MIN); debouncedProgress(); }
+
+// ── VOCAB COUNT ───────────────────────────────────────
+function countVocabWords(updateDisplay) {
+  const text = getCERText().toLowerCase();
+  let count=0;
+  VOCAB_WORDS.forEach(word => {
+    const used=text.includes(word.toLowerCase());
+    if(used) count++;
+    if(updateDisplay !== false) {
+      const chip=document.querySelector(`.cer-chip[data-word="${word}"]`);
+      if(chip) chip.classList.toggle('used',used);
+    }
+  });
+  if(updateDisplay !== false) {
+    const counter=document.getElementById('wbCounter');
+    if(counter){ counter.textContent=`${count} / 4 used`; counter.classList.toggle('met',count>=4); }
+  }
+  return count;
+}
+
+function getCERText() {
+  return ['claim-1','claim-4','ev1-1','ev1-4','ev2-1','ev2-4','rea-1','rea-4']
+    .map(id=>document.getElementById(id)?.value||'').join(' ');
+}
+
+// ── ASSEMBLED PARAGRAPH ───────────────────────────────
+function getActiveVal(group) {
+  for (const l of [1,4]) {
+    const panel=document.getElementById(`fp-${group}-${l}`);
+    if(panel&&panel.classList.contains('active')){ const ta=panel.querySelector('textarea'); return ta?ta.value.trim():''; }
+  }
+  return '';
+}
+function updateCERPara() {
+  const parts=[getActiveVal('claim'),getActiveVal('ev1'),getActiveVal('ev2'),getActiveVal('rea')].filter(p=>p.length>0);
+  const el=document.getElementById('paraAssembly');
+  if(parts.length===0){ el.innerHTML='<span class="para-placeholder">Your paragraph will appear here as you write above. / Tu párrafo aparecerá aquí mientras escribes arriba.</span>'; }
+  else { el.textContent=parts.join(' '); }
+}
+function copyPara() {
+  const text=document.getElementById('paraAssembly').textContent;
+  if(text.includes('appear here')) return;
+  navigator.clipboard.writeText(text).then(()=>{
+    const btn=document.querySelector('.para-copy-btn');
+    btn.textContent='✓ Copied! / ¡Copiado!';
+    setTimeout(()=>btn.textContent='📋 Copy / Copiar',2000);
+  });
+}
+
+// ── PROGRESS ──────────────────────────────────────────
+function countComplete() {
+  let done=0, total=0;
+  Object.keys(MC_KEY).forEach(n=>{ total++; if(document.querySelector(`input[name="${n}"]:checked`)) done++; });
+  ['justify-crisis','justify-ark','partner-crisis','partner-ark'].forEach(id=>{ total++; const el=document.getElementById(id); if(el&&el.value.trim().length>=MIN) done++; });
+  ['c1','a1'].forEach(story=>{ total++; if([1,2,3,4,5].every(n=>{ const el=document.getElementById(`fact-${story}-${n}`); return el&&el.value.trim().length>=FACT_MIN; })) done++; });
+  ['mi1','mi2'].forEach(g=>{ total++; if([1,4].some(l=>{ const el=document.getElementById(`${g.replace('mi','mi')}-${l}`) || document.getElementById(`mi${g.slice(2)}-${l}`); return el&&el.value.trim().length>=MIN; })) done++; });
+  [['claim',['claim-1','claim-4']],['ev1',['ev1-1','ev1-4']],['ev2',['ev2-1','ev2-4']],['rea',['rea-1','rea-4']]].forEach(([,ids])=>{ total++; if(ids.some(id=>{ const el=document.getElementById(id); return el&&el.value.trim().length>=MIN; })) done++; });
+  total++; if(countVocabWords()>=4) done++;
+  return {done,total};
+}
+function updateProgress() {
+  const {done,total}=countComplete();
+  document.getElementById('progressBar').style.width=Math.round(done/total*100)+'%';
+  document.getElementById('progressLabel').textContent=`${done} of ${total} sections complete / ${done} de ${total} secciones completas`;
+}
+
+// ── AUTOSAVE ──────────────────────────────────────────
+function autoSave() {
+  try {
+    const data={name:document.getElementById('studentName').value,period:document.getElementById('studentPeriod').value,date:document.getElementById('studentDate').value};
+    ['justify-crisis','justify-ark','partner-crisis','partner-ark','mi1-1','mi1-4','mi2-1','mi2-4','claim-1','claim-4','ev1-1','ev1-4','ev2-1','ev2-4','rea-1','rea-4']
+      .forEach(id=>{ const el=document.getElementById(id); if(el) data[id]=el.value; });
+    ['c1','a1'].forEach(s=>[1,2,3,4,5].forEach(n=>{ const el=document.getElementById(`fact-${s}-${n}`); if(el) data[`fact-${s}-${n}`]=el.value; }));
+    Object.keys(MC_KEY).forEach(n=>{ const s=document.querySelector(`input[name="${n}"]:checked`); if(s) data['mc_'+n]=s.value; });
+    ['hl-crisis','hl-ark'].forEach(id=>{ const el=document.getElementById(id); if(el) data['hl_'+id]=el.innerHTML; });
+    document.querySelectorAll('.drag-slot').forEach(slot=>{ const c=slot.querySelector('.chip'); if(c) data[`drag_${slot.dataset.answer}_${slot.dataset.bank}`]=c.dataset.word; });
+    localStorage.setItem(STORAGE_KEY,JSON.stringify(data));
+    const n=document.getElementById('saveNotice'); n.classList.add('show'); setTimeout(()=>n.classList.remove('show'),1800);
+  } catch(e){}
+}
+
+// ── LOAD ──────────────────────────────────────────────
+function loadSave() {
+  try {
+    const data=JSON.parse(localStorage.getItem(STORAGE_KEY)||'{}');
+    if(data.name) document.getElementById('studentName').value=data.name;
+    if(data.period) document.getElementById('studentPeriod').value=data.period;
+    if(data.date) document.getElementById('studentDate').value=data.date;
+    ['justify-crisis','justify-ark','partner-crisis','partner-ark','mi1-1','mi1-4','mi2-1','mi2-4','claim-1','claim-4','ev1-1','ev1-4','ev2-1','ev2-4','rea-1','rea-4']
+      .forEach(id=>{ const el=document.getElementById(id); if(el&&data[id]){el.value=data[id];checkTA(id);} });
+    ['c1','a1'].forEach(s=>[1,2,3,4,5].forEach(n=>{ const el=document.getElementById(`fact-${s}-${n}`); if(el&&data[`fact-${s}-${n}`]){el.value=data[`fact-${s}-${n}`];checkFact(`fact-${s}-${n}`);} }));
+    Object.keys(MC_KEY).forEach(n=>{ if(data['mc_'+n]){ const r=document.querySelector(`input[name="${n}"][value="${data['mc_'+n]}"]`); if(r){r.checked=true;checkMC(n,MC_KEY[n]);} } });
+    ['hl-crisis','hl-ark'].forEach(id=>{ const el=document.getElementById(id); if(el&&data['hl_'+id]){ el.innerHTML=data['hl_'+id]; el.querySelectorAll('mark.hl-mark').forEach(m=>m.addEventListener('click',()=>{unwrap(m);autoSave();})); } });
+    document.querySelectorAll('.drag-slot').forEach(slot=>{ const key=`drag_${slot.dataset.answer}_${slot.dataset.bank}`; const saved=data[key]; if(!saved) return; const chip=document.getElementById(`chip${slot.dataset.bank}-${saved}`); if(!chip) return; slot.innerHTML=''; slot.appendChild(chip); chip.classList.add('placed'); slot.classList.toggle('correct',saved===slot.dataset.answer); slot.classList.toggle('incorrect',saved!==slot.dataset.answer); });
+    countVocabWords(); updateCERPara();
+  } catch(e){}
+}
+
+// ── GRADE ─────────────────────────────────────────────
+function gradeActivity() {
+  const {done,total}=countComplete();
+  document.getElementById('gradeScore').textContent=`${done} / ${total}`;
+  const rows=document.getElementById('gradeRows'); rows.innerHTML='';
+  const factsOk=s=>[1,2,3,4,5].every(n=>{ const el=document.getElementById(`fact-${s}-${n}`); return el&&el.value.trim().length>=FACT_MIN; });
+  const anyFilled=ids=>ids.some(id=>(document.getElementById(id)?.value.trim().length||0)>=MIN);
+  const checks=[
+    {label:'Story 1 — MC Questions (Q1–5) / Preguntas Historia 1', pass:['q1','q2','q3','q4','q5'].every(n=>document.querySelector(`input[name="${n}"]:checked`))},
+    {label:'Story 1 — Highlight Justification / Justificación de marcado', pass:(document.getElementById('justify-crisis')?.value.trim().length||0)>=MIN},
+    {label:'Story 1 — Five Facts / Cinco hechos', pass:factsOk('c1')},
+    {label:'Story 1 — Main Idea / Idea principal', pass:anyFilled(['mi1-1','mi1-4'])},
+    {label:'Story 1 — Partner Share / Compartir', pass:(document.getElementById('partner-crisis')?.value.trim().length||0)>=MIN},
+    {label:'Story 2 — MC Questions (Q6–10) / Preguntas Historia 2', pass:['q6','q7','q8','q9','q10'].every(n=>document.querySelector(`input[name="${n}"]:checked`))},
+    {label:'Story 2 — Highlight Justification / Justificación de marcado', pass:(document.getElementById('justify-ark')?.value.trim().length||0)>=MIN},
+    {label:'Story 2 — Five Facts / Cinco hechos', pass:factsOk('a1')},
+    {label:'Story 2 — Main Idea / Idea principal', pass:anyFilled(['mi2-1','mi2-4'])},
+    {label:'Story 2 — Partner Share / Compartir', pass:(document.getElementById('partner-ark')?.value.trim().length||0)>=MIN},
+    {label:'CER — Claim / Afirmación', pass:anyFilled(['claim-1','claim-4'])},
+    {label:'CER — Evidence Story 1 / Evidencia Historia 1', pass:anyFilled(['ev1-1','ev1-4'])},
+    {label:'CER — Evidence Story 2 / Evidencia Historia 2', pass:anyFilled(['ev2-1','ev2-4'])},
+    {label:'CER — Reasoning / Razonamiento', pass:anyFilled(['rea-1','rea-4'])},
+    {label:'CER — 4+ Vocabulary Words / 4+ palabras del vocabulario', pass:countVocabWords()>=4},
+  ];
+  checks.forEach(c=>{ const row=document.createElement('div'); row.className='grade-row '+(c.pass?'pass':'fail'); row.innerHTML=`<span>${c.pass?'✓':'✗'}</span><span class="item-name">${c.label}</span>`; rows.appendChild(row); });
+  document.getElementById('gradePanel').classList.add('show');
+  document.getElementById('gradePanel').scrollIntoView({behavior:'smooth',block:'nearest'});
+}
+
+// ── PDF ───────────────────────────────────────────────
+function savePDF() {
+  try {
+    const name=document.getElementById('studentName').value||'___________';
+    const period=document.getElementById('studentPeriod').value||'___';
+    let mcDone=0;
+    Object.keys(MC_KEY).forEach(n=>{ if(document.querySelector('input[name="'+n+'"]:checked')) mcDone++; });
+    const wbCount=countVocabWords();
+    const existing=document.getElementById('pdf-score-bar');
+    if(existing) existing.remove();
+    const el=document.createElement('div');
+    el.id='pdf-score-bar';
+    el.style.cssText=['background:#1a1008','color:#f5f0e8','padding:14px 24px','font-family:monospace','font-size:12pt','font-weight:bold','margin:0 0 20px 0','display:block','width:100%','-webkit-print-color-adjust:exact','print-color-adjust:exact'].join(';');
+    el.textContent='SCORE — MC: '+mcDone+'/'+Object.keys(MC_KEY).length+'  |  VOCAB: '+wbCount+'/4  |  NAME: '+name+'  |  PERIOD: '+period;
+    document.body.insertBefore(el,document.body.firstChild);
+    setTimeout(()=>{ window.print(); setTimeout(()=>{ const bar=document.getElementById('pdf-score-bar'); if(bar) bar.remove(); },2000); },200);
+  } catch(e){ window.print(); }
+}
+
+// ── INIT ──────────────────────────────────────────────
+window.addEventListener('DOMContentLoaded',()=>{
+  initDrag();
+  initHighlight('hl-crisis');
+  initHighlight('hl-ark');
+  loadSave();
+  updateProgress();
+});
+</script>
+</body>
+</html>
